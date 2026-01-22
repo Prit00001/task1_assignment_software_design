@@ -1,9 +1,9 @@
 class Library:
 
     def __init__(self):
-        self.books={}
+        self.books = {}
 
-    def add_book(self,book_id,title):
+    def add_book(self, book_id, title):
         if book_id in self.books:
             raise ValueError("Duplicate Book Id")
         self.books[book_id] = {"title": title, "available": True}
@@ -23,3 +23,12 @@ class Library:
             raise ValueError("Book not found")
         self.books[book_id]["available"] = True
         return True
+    
+    def generate_report(self):
+        report_lines = ["Book ID | Title | Status"]
+
+        for book_id, info in self.books.items():
+            status = "Available" if info["available"] else "Borrowed"
+            report_lines.append(f"{book_id} | {info['title']} | {status}")
+
+        return "\n".join(report_lines)

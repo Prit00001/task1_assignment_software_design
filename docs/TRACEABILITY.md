@@ -15,5 +15,6 @@
 |        allow users to return book  return_book()           book_update       v0.2  |
 |                                                            _status()               |
 |------------------------------------------------------------------------------------|
-|3.     As a librarian i want  to 
-|       allow 
+|3.     As a librarian i want  to    generate_report         test_generate_  v0.3    | 
+|       generate library reports      ()                     report()                |
+-------------------------------------------------------------------------------------- 
