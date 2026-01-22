@@ -1,20 +1,10 @@
-|sprint|        User Story        | Implementation        |   Test Case    | Git Tag |
-|------|--------------------------|-----------------------|----------------|---------|
-| 1.      As a librarian i want to    add_book()           test_add_book      v0.1   |
-|         add the books to system                           _success()               |
-|         As a librarian i want to    add_book()           test_add_duplicate        |
-|          prevent  duplicate book                         _id_raises_error() v0.1   | 
-|         id's.                                                                      |
-|------------------------------------------------------------------------------------|
-|2.      As a librarian i want alllow borrow_book()         test_borrow_      v0.2.  |
-|        users to borrow boooks.                            book_success()           |
-|        As a librarian i want to      borrow_book()        test_borrow_     v0.2   |  
-|        prevent borrowing unavai-                          unavailable_book         |
-|         -lable book                                       _error()                 |
-|        As a librarian i want to                           test_return_             | 
-|        allow users to return book  return_book()           book_update       v0.2  |
-|                                                            _status()               |
-|------------------------------------------------------------------------------------|
-|3.     As a librarian i want  to    generate_report         test_generate_  v0.3    | 
-|       generate library reports      ()                     report()                |
--------------------------------------------------------------------------------------- 
+| Sprint | User Story                                                                 | Implementation        | Test Case                               | Git Tag |
+|--------|-----------------------------------------------------------------------------|-----------------------|------------------------------------------|---------|
+| 1      | As a librarian, I want to add books to the system                            | add_book()            | test_add_book_success()                  | v0.1    |
+|        | As a librarian, I want to prevent duplicate book IDs                         | add_book()            | test_add_duplicate_id_raises_error()     | v0.1    |
+|--------|-----------------------------------------------------------------------------|-----------------------|------------------------------------------|---------|
+| 2      | As a librarian, I want to allow users to borrow books                        | borrow_book()         | test_borrow_book_success()               | v0.2    |
+|        | As a librarian, I want to prevent borrowing unavailable books               | borrow_book()         | test_borrow_unavailable_book_error()     | v0.2    |
+|        | As a librarian, I want to allow users to return books                        | return_book()         | test_return_book_update_status()          | v0.2    |
+|--------|-----------------------------------------------------------------------------|-----------------------|------------------------------------------|---------|
+| 3      | As a librarian, I want to generate library reports                           | generate_report()     | test_generate_report()                   | v0.3    |
