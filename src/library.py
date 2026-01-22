@@ -24,11 +24,10 @@ class Library:
         self.books[book_id]["available"] = True
         return True
     
-    def generate_report(self):
+  def generate_report(self):
+        # Indent these lines by 4 spaces (one tab) inside the function
         report_lines = ["Book ID | Title | Status"]
-
         for book_id, info in self.books.items():
             status = "Available" if info["available"] else "Borrowed"
             report_lines.append(f"{book_id} | {info['title']} | {status}")
-
         return "\n".join(report_lines)
